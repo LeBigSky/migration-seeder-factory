@@ -2,8 +2,10 @@
 
 namespace Database\Seeders;
 
+use App\Models\Batiment;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+
 
 class BatimentSeeder extends Seeder
 {
@@ -14,6 +16,6 @@ class BatimentSeeder extends Seeder
      */
     public function run()
     {
-        //
+        Batiment::factory()->count(1)->create();
     }
 }
