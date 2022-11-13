@@ -16,27 +16,46 @@ class TypeformationSeeder extends Seeder
     public function run()
     {
         DB::table('typeformations')->insert([
-            ['nom' => 'Coding School'
+            ['nom' => 'Coding School',
+            'created_at' => date('Y-m-d H:i:s'),
+            'updated_at' => date('Y-m-d H:i:s')
             ],
-            ['nom' => 'Marketing School'
+            ['nom' => 'Marketing School',
+            'created_at' => date('Y-m-d H:i:s'),
+            'updated_at' => date('Y-m-d H:i:s')
             ],
-            ['nom' => 'Technical School'
+            ['nom' => 'Technical School',
+            'created_at' => date('Y-m-d H:i:s'),
+            'updated_at' => date('Y-m-d H:i:s')
             ],
-            ['nom' => 'Auditor School'
+            ['nom' => 'Auditor School',
+            'created_at' => date('Y-m-d H:i:s'),
+            'updated_at' => date('Y-m-d H:i:s')
             ],
-            ['nom' => 'Medical School'
+            ['nom' => 'Medical School',
+            'created_at' => date('Y-m-d H:i:s'),
+            'updated_at' => date('Y-m-d H:i:s')
             ],
-            ['nom' => 'Ingenering School'
+            ['nom' => 'Ingenering School',
+            'created_at' => date('Y-m-d H:i:s'),
+            'updated_at' => date('Y-m-d H:i:s')
             ],
-            ['nom' => 'Logical School'
+            ['nom' => 'Logical School',
+            'created_at' => date('Y-m-d H:i:s'),
+            'updated_at' => date('Y-m-d H:i:s')
             ],
-            ['nom' => 'Science School'
+            ['nom' => 'Science School',
+            'created_at' => date('Y-m-d H:i:s'),
+            'updated_at' => date('Y-m-d H:i:s')
             ],
-            ['nom' => 'Data School'
+            ['nom' => 'Data School',
+            'created_at' => date('Y-m-d H:i:s'),
+            'updated_at' => date('Y-m-d H:i:s')
             ],
-            ['nom' => 'Smart School'
+            ['nom' => 'Smart School',
+            'created_at' => date('Y-m-d H:i:s'),
+            'updated_at' => date('Y-m-d H:i:s')
             ],
-        
         ]);
         
     }
