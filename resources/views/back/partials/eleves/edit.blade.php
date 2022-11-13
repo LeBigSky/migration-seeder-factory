@@ -1,6 +1,6 @@
 <section class="mt-5">
   <div class="container">
-<form action="/update/{{ $eleve->id }}"method="POST">
+<form action="/eleve/update/{{ $eleve->id }}"method="POST">
   @csrf
   <h2>MODIFER UN ELEVE</h2>
       <div class="mb-3">

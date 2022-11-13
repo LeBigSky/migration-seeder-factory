@@ -1,6 +1,6 @@
     <section class="mt-5">
         <div class="container">
-     <form action="/update/{{ $type->id }}" method="POST">
+     <form action="/type/update/{{ $type->id }}" method="POST">
         @csrf
         <h2>MODIFIER UN TYPE DE FORMATION</h2>
             <div class="mb-3">

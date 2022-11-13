@@ -1,6 +1,6 @@
     <section class="mt-5">
         <div class="container">
-     <form action="/update/{{ $batiment->id }}" method="POST">
+     <form action="/batiment/update/{{ $batiment->id }}" method="POST">
         @csrf
         <h2>MODIFIER UN BATIMENT</h2>
             <div class="mb-3">
