@@ -8,7 +8,7 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="{{ route('admin.home') }}">Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="{{ route('admin.batiments') }}">Bâtiments</a>
@@ -34,7 +34,7 @@
                       />
                     </a>
                     <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#"> <button class="btn btn-danger">Log out</button> </a></li>
+                      <li><a class="dropdown-item" href="{{ route('batiment') }}"> <button class="btn btn-danger">Log out</button> </a></li>
                     </ul>
                   </li>
             </ul>

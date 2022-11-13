@@ -1,12 +1,12 @@
 <section class="mt-5">
     <div class="container">
- <form action={{ route('store.batiment') }} method="POST">
+ <form action={{ route('store.formation') }} method="POST">
     @csrf
-    <h2>AJOUTER UN NOUVEAU BATIMENT</h2>
+    <h2>AJOUTER UN NOUVELLE FORMATION</h2>
         <div class="mb-3">
           <label for="exampleInputEmail1" class="form-label">Nom</label>
           <input type="string" class="form-control" name="nom" aria-describedby="">
-          <div id="" class="form-text">Merci de ne pas choisir de noms a fortes polémique.</div>
+          <div id="" class="form-text">Vos données sont entre de bonnes mains, faites nous confiance...</div>
         </div>
         <div class="mb-3">
           <label for="exampleInputPassword1" class="form-label">Description</label>

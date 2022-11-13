@@ -51,9 +51,9 @@
               @else
               <td class="table-success" >Oui</td>
               @endif
-              <td><a href="/show/{{ $b->id }}"><button class="btn btn-info">Show</button></td>
-                <td><a href="/edit/{{ $b->id }}"><button class="btn btn-success">Edit</button></a></td>
-                <td><form action="/delete/{{ $b->id }}" method="POST">
+              <td><a href="/eleve/show/{{ $b->id }}"><button class="btn btn-info">Show</button></td>
+                <td><a href="/eleve/edit/{{ $b->id }}"><button class="btn btn-success">Edit</button></a></td>
+                <td><form action="/eleve/delete/{{ $b->id }}" method="POST">
                   @csrf
                   @method('DELETE')
                   <input class="btn btn-danger" type="submit" value="Delete">

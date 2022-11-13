@@ -22,9 +22,9 @@
                 </th>
                 <td>{{ $b->nom }}</td>
                 <td>{{ $b->description }}</td>
-                <td><a href="/show/{{ $b->id }}"><button class="btn btn-info">Show</button></td>
-                <td><a href="/edit/{{ $b->id }}"><button class="btn btn-success">Edit</button></a></td>
-                <td><form action="/delete/{{ $b->id }}" method="POST">
+                <td><a href="/batiment/show/{{ $b->id }}"><button class="btn btn-info">Show</button></td>
+                <td><a href="/batiment/edit/{{ $b->id }}"><button class="btn btn-success">Edit</button></a></td>
+                <td><form action="/batiment/delete/{{ $b->id }}" method="POST">
                   @csrf
                   @method('DELETE')
                   <input class="btn btn-danger" type="submit" value="Delete">

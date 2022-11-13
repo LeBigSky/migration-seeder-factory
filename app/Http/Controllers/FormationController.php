@@ -21,6 +21,28 @@ class FormationController extends Controller
         $store->description = $request-> description;
         $store->save();
         return redirect ()->route('admin.formations');
-
+    }
+    public function create (){
+        return view('back.pages.formations.create');
+    }
+    public function edit ($id){
+        $formation= Formation::find($id);
+        return view('back.pages.Formations.edit', compact('formation'));
+    }
+    public function update (Request $request, $id){
+        $update= Formation::find($id);
+        $update->nom = $request-> nom;
+        $update->description = $request-> description;
+        $update->save();
+        return redirect ()->route('admin.formations');
+    }
+    public function show ($id){
+        $formation= Formation::find($id);
+        return view('back.pages.formations.show', compact('formation'));
+    }
+    public function delete ($id){
+        $formation= Formation::find($id);
+        $formation->delete();
+        return redirect ()-> route('admin.formations');
     }
 }

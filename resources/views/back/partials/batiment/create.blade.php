@@ -6,7 +6,7 @@
         <div class="mb-3">
           <label for="exampleInputEmail1" class="form-label">Nom</label>
           <input type="string" class="form-control" name="nom" aria-describedby="">
-          <div id="" class="form-text">Merci de ne pas choisir de noms a fortes polémique.</div>
+          <div id="" class="form-text">Vos données sont entre de bonnes mains, faites nous confiance...</div>
         </div>
         <div class="mb-3">
           <label for="exampleInputPassword1" class="form-label">Description</label>
