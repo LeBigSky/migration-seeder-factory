@@ -1,4 +1,4 @@
-
+@include('layouts.flash')
     <section class="mt-5">
         <div class="container">
           <button type="button" class="btn btn-warning my-3"><a style="text-decoration: none; color: black;" href="{{ route('type.create') }}">CREER  &#10133;</a></button>

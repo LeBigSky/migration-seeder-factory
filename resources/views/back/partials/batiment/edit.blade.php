@@ -1,4 +1,5 @@
-    <section class="mt-5">
+@include('layouts.flash')
+<section class="mt-5">
         <div class="container">
      <form action="/batiment/update/{{ $batiment->id }}" method="POST">
         @csrf

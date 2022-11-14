@@ -1,3 +1,4 @@
+@include('layouts.flash')
     <section class="mt-5">
         <div class="container">
      <form action="/type/update/{{ $type->id }}" method="POST">

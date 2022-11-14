@@ -10,6 +10,7 @@
 </head>
 <body>
     @include('front.partials.navbar')
+    @include('layouts.flash')
     @yield('content')
 </body>
 </html>

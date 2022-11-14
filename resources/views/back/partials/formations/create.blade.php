@@ -1,3 +1,4 @@
+@include('layouts.flash')
 <section class="mt-5">
     <div class="container">
  <form action={{ route('store.formations') }} method="POST">
