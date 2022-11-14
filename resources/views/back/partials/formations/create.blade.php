@@ -1,6 +1,6 @@
 <section class="mt-5">
     <div class="container">
- <form action={{ route('store.formation') }} method="POST">
+ <form action={{ route('store.formations') }} method="POST">
     @csrf
     <h2>AJOUTER UN NOUVELLE FORMATION</h2>
         <div class="mb-3">
