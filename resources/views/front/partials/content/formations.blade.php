@@ -4,7 +4,7 @@
         <table class="table">
         <thead>
           <tr class=>
-            <th scope="col">Matricule</th>
+            <th scope="col">Numero</th>
             <th scope="col">Nom</th>
             <th scope="col">Description</th>
           </tr>
