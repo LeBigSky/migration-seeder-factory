@@ -32,8 +32,6 @@
               @else
               <li class="nav-item">
                 <a class="nav-link" href="{{ route('admin.formations') }}">Formations</a>
-              </li> <li class="nav-item">
-                <a class="nav-link" href="{{ route('admin.formations') }}">Formations</a>
               </li>
               @endif
              @if (Route::is('admin.types'))
