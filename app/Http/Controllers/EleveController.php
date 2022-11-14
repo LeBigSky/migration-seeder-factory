@@ -11,6 +11,7 @@ class EleveController extends Controller
         $eleves= Eleve::all();
         return view('front.pages.eleves', compact('eleves'));
     }
+    /////////////////////////////////////////////////////////////////////// BACK SIDE OF THE PAGE \/
     public function backeleve (){
         $eleves= Eleve::all();
         return view('back.pages.eleves.eleves', compact('eleves'));

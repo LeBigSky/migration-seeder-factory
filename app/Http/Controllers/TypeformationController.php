@@ -11,6 +11,7 @@ class TypeformationController extends Controller
         $types= Typeformation::all();
         return view('front.pages.types', compact('types'));
     }
+    /////////////////////////////////////////////////////////////////////// BACK SIDE OF THE PAGE \/
     public function backtype (){
         $types= Typeformation::all();
         return view('back.pages.types.types', compact('types'));

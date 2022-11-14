@@ -25,7 +25,6 @@ Route::get('/eleves', [EleveController::class, 'eleve'])->name('eleves');
 Route::get('/formations', [FormationController::class, 'formation'])->name('formations');
 Route::get('/types', [TypeformationController::class, 'type'])->name('types');
 
-
 /* BACK VIEWS ROUTES*/
 Route::get('/admin', [BackController::class, 'back'])->name('admin.home');
 Route::get('/admin/batiment', [BatimentController::class, 'backbatiment'])->name('admin.batiments');

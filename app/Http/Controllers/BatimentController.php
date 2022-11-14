@@ -15,6 +15,7 @@ class BatimentController extends Controller
         $batiments= Batiment::all();
         return view('front.pages.batiment', compact('batiments'));
     }
+    /////////////////////////////////////////////////////////////////////// BACK SIDE OF THE PAGE \/
     public function backbatiment (){
         $batiments= Batiment::all();
         return view('back.pages.batiment.batiment', compact('batiments'));

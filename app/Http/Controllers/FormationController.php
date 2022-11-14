@@ -11,6 +11,7 @@ class FormationController extends Controller
         $formations= Formation::all();
         return view('front.pages.formations', compact('formations'));
     }
+    /////////////////////////////////////////////////////////////////////// BACK SIDE OF THE PAGE \/
     public function backformation (){
         $formations= Formation::all();
         return view('back.pages.formations.formations', compact('formations'));
