@@ -11,7 +11,11 @@
           <h5 class="card-title">Nom: {{ $eleve->nom}}</h5>
           <p class="card-text">Prenom: {{ $eleve->prenom }}</p>
           <p class="card-text">Age: {{ $eleve->age }}</p>
-          <p class="card-text">Employé: {{ $eleve->employé }}</p>
+          @if ($eleve->employé == 0 )
+          <p class="card-text">Employé: Non </p>
+          @else
+             <p class="card-text">Employé: oui </p> 
+          @endif
         </div>
       </div>
     </div>
