@@ -7,21 +7,55 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              @if (Route::is('admin.home'))
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="{{ route('admin.home') }}">Home</a>
               </li>
-              <li class="nav-item">
+              @else
+                 <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="{{ route('admin.home') }}">Home</a>
+              </li>
+              @endif
+             @if (Route::is('admin.batiments'))
+             <li class="nav-item">
+              <a class="nav-link active" href="{{ route('admin.batiments') }}">Bâtiments</a>
+            </li><li class="nav-item">
+              <a class="nav-link active" href="{{ route('admin.batiments') }}">Bâtiments</a>
+            </li>
+             @else
+               <li class="nav-item">
                 <a class="nav-link" href="{{ route('admin.batiments') }}">Bâtiments</a>
               </li>
+             @endif
+              @if (Route::is('admin.formations'))
+              <li class="nav-item">
+                <a class="nav-link active" href="{{ route('admin.formations') }}">Formations</a>
+              </li> 
+              @else
               <li class="nav-item">
                 <a class="nav-link" href="{{ route('admin.formations') }}">Formations</a>
+              </li> <li class="nav-item">
+                <a class="nav-link" href="{{ route('admin.formations') }}">Formations</a>
               </li>
-              <li class="nav-item">
+              @endif
+             @if (Route::is('admin.types'))
+             <li class="nav-item">
+              <a class="nav-link active" href="{{ route('admin.types') }}">Types de formations</a>
+            </li>
+             @else
+               <li class="nav-item">
                 <a class="nav-link" href="{{ route('admin.types') }}">Types de formations</a>
               </li>
+             @endif
+              @if (Route::is('admin.eleves'))
               <li class="nav-item">
+                <a class="nav-link active" href="{{ route('admin.eleves') }}">Élèves</a>
+              </li>
+              @else
+                <li class="nav-item">
                 <a class="nav-link" href="{{ route('admin.eleves') }}">Élèves</a>
               </li>
+              @endif
               <ul>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -34,13 +68,11 @@
                       />
                     </a>
                     <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="{{ route('batiment') }}"> <button class="btn btn-danger">Log out</button> </a></li>
+                      <li><a class="dropdown-item" href="{{ route('batiment') }}"> <button class="btn btn-danger"> <i class="fa-solid fa-right-from-bracket"></i> Log out</button> </a></li>
                     </ul>
                   </li>
             </ul>
             </ul>
-       
-            
           </div>
         </div>
       </nav>
