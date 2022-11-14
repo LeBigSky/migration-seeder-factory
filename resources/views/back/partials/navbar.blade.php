@@ -19,9 +19,7 @@
              @if (Route::is('admin.batiments'))
              <li class="nav-item">
               <a class="nav-link active" href="{{ route('admin.batiments') }}">Bâtiments</a>
-            </li><li class="nav-item">
-              <a class="nav-link active" href="{{ route('admin.batiments') }}">Bâtiments</a>
-            </li>
+             </li>
              @else
                <li class="nav-item">
                 <a class="nav-link" href="{{ route('admin.batiments') }}">Bâtiments</a>
